@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="bird"
+            type="com.bird394proj.data.Bird" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/birdNameDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{bird.name}"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/birdScientificName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{bird.scientificName}"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/birdHabitat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{bird.habitat}"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/birdFunFact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{bird.funFact}"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/birdImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background" />
+    </LinearLayout>
+</layout>
